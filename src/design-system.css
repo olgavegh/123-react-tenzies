@@ -1,0 +1,50 @@
+:root {
+  /* @link https://utopia.fyi/type/calculator?c=360,16,1.2,1240,20,1.414,3,1,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 
+  Fluid type scale calculator*/
+
+  --step--1: clamp(0.8rem, 0.7182rem + 0.3636vw, 1rem);
+  --step-0: clamp(1rem, 0.8977rem + 0.4545vw, 1.25rem); /*body*/
+  --step-1: clamp(1.25rem, 1.1222rem + 0.5682vw, 1.5625rem); /*h3*/
+  --step-2: clamp(1.5625rem, 1.4027rem + 0.7102vw, 1.9531rem);
+  --step-3: clamp(1.9531rem, 1.7534rem + 0.8878vw, 2.4414rem); /*h1*/
+
+  /* Color system — 1 hue (230°), 5 variations — Practical UI */
+  --color-brand: hsl(230, 65%, 57%); /* interactive  */
+  --color-text-strong: hsl(230, 40%, 17%); /* headings     */
+  --color-text-weak: hsl(230, 16%, 42%); /* body copy    */
+  --color-stroke-strong: hsl(230, 18%, 58%); /* borders      */
+  --color-stroke-weak: hsl(230, 28%, 92%); /* subtle lines */
+  --color-fill: hsl(230, 33%, 97%); /* card surface */
+  --color-background: hsl(0, 0%, 100%); /* page bg      */
+
+  /* Semantic aliases */
+  --color-bg: var(--color-background);
+  --color-main-bg: var(--color-fill);
+  --color-primary: var(--color-brand);
+  --color-die-bg: var(--color-background);
+  --color-die-shadow: hsl(230 18% 58% / 0.25);
+  --color-die-held: #59e391;
+  --color-title: var(--color-text-strong);
+  --color-body: var(--color-text-weak);
+  --color-border: var(--color-stroke-weak);
+  --color-button-text: #fff;
+  --radius-main: 10px;
+  --radius-die: 10px;
+  --radius-button: 6px;
+
+  --font-main: "Nata Sans", sans-serif;
+  --font-size-title: var(--step-3);
+  --font-size-die: var(--step-1);
+  --font-size-body: var(--step-0);
+  --font-size-button: var(--step-1);
+  --letter-spacing-title: 0em;
+  --letter-spacing-text: 0em;
+  --line-height: 1.3;
+
+  --space-xs: 0.5rem;
+  --space-s: 1rem;
+  --space-m: 1.5rem;
+  --space-l: 2rem;
+  --space-xl: 3rem;
+  --space-xxl: 5rem;
+}
