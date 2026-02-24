@@ -108,3 +108,15 @@ button.roll-dice {
     background-color: color-mix(in srgb, var(--color-primary) 85%, #000);
   }
 }
+
+.game-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.roll-count {
+  font-size: var(--font-size-label);
+  color: var(--color-body);
+}

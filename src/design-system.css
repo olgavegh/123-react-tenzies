@@ -37,6 +37,7 @@
   --font-size-die: var(--step-1);
   --font-size-body: var(--step-0);
   --font-size-button: var(--step-1);
+  --font-size-label: var(--step--1);
   --letter-spacing-title: 0em;
   --letter-spacing-text: 0em;
   --line-height: 1.3;
