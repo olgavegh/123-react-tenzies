@@ -18,12 +18,12 @@
   --color-background: hsl(0, 0%, 100%); /* page bg      */
 
   /* Semantic aliases */
-  --color-bg: var(--color-background);
+  --color-bg: var(--color-text-strong);
   --color-main-bg: var(--color-fill);
   --color-primary: var(--color-brand);
   --color-die-bg: var(--color-background);
   --color-die-shadow: hsl(230 18% 58% / 0.25);
-  --color-die-held: #59e391;
+  --color-die-held: #50cedb;
   --color-title: var(--color-text-strong);
   --color-body: var(--color-text-weak);
   --color-border: var(--color-stroke-weak);
