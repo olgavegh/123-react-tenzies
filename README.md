@@ -52,7 +52,7 @@ npm run dev
 ## Planned improvements
 
 ### Gameplay
-- [ ] **Roll counter** — display how many rolls the current game took
+- [x] **Roll counter** — display how many rolls the current game took
 - [ ] **Stopwatch** — track elapsed time per game
 - [ ] **Best score** — persist fastest time & fewest rolls to `localStorage`
 - [ ] **Difficulty modes** — Easy (6-sided), Hard (10-sided or 12 dice)
