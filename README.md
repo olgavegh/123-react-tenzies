@@ -39,12 +39,12 @@ npm run dev
 
 ## Tech stack
 
-| Tool | Purpose |
-|---|---|
-| React 19 | UI & state management |
-| Vite 8 | Dev server & bundler |
-| react-confetti | Win celebration |
-| CSS Custom Properties | Design tokens — colors, type, space |
+| Tool                      | Purpose                                   |
+| ------------------------- | ----------------------------------------- |
+| React 19                  | UI & state management                     |
+| Vite 8                    | Dev server & bundler                      |
+| react-confetti            | Win celebration                           |
+| CSS Custom Properties     | Design tokens — colors, type, space       |
 | Fluid type scale (Utopia) | Responsive typography without breakpoints |
 
 ---
@@ -52,22 +52,26 @@ npm run dev
 ## Planned improvements
 
 ### Gameplay
+
 - [x] **Roll counter** — display how many rolls the current game took
 - [ ] **Stopwatch** — track elapsed time per game
 - [ ] **Best score** — persist fastest time & fewest rolls to `localStorage`
 - [ ] **Difficulty modes** — Easy (6-sided), Hard (10-sided or 12 dice)
 
 ### UI / UX
+
 - [ ] **Dice roll animation** — brief shake on unfreeze-and-roll
 - [ ] **Held indicator** — checkmark or ring on frozen dice beyond the bg color change
-- [ ] **Dark mode toggle** — design tokens already support theming
+- [x] **Dark mode toggle** — design tokens already support theming
 - [ ] **Win screen** — score summary overlay before resetting
 
 ### Accessibility
+
 - [ ] **Keyboard navigation** — arrow keys to move between dice, `Space` to freeze
 - [ ] **Reduced-motion support** — `prefers-reduced-motion` disables transitions & confetti
 - [ ] **Screen reader announcements** — `aria-live` region for roll results
 
 ### Code quality
+
 - [ ] **`useTenzies` custom hook** — extract game logic out of `App.jsx`
 - [ ] **Vitest unit tests** — cover `generateAllNewDice`, `hold`, and win condition

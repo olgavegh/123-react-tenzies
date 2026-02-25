@@ -14,16 +14,18 @@
   --color-text-weak: hsl(230, 16%, 42%); /* body copy    */
   --color-stroke-strong: hsl(230, 18%, 58%); /* borders      */
   --color-stroke-weak: hsl(230, 28%, 92%); /* subtle lines */
+  --color-overlay: hsl(230, 30%, 94%); /* card surface */
   --color-fill: hsl(230, 33%, 97%); /* card surface */
   --color-background: hsl(0, 0%, 100%); /* page bg      */
+  --color-acc: hsl(172, 65%, 50%);
 
   /* Semantic aliases */
-  --color-bg: var(--color-text-strong);
+  --color-bg: var(--color-background);
   --color-main-bg: var(--color-fill);
   --color-primary: var(--color-brand);
   --color-die-bg: var(--color-background);
   --color-die-shadow: hsl(230 18% 58% / 0.25);
-  --color-die-held: #50cedb;
+  --color-die-held: var(--color-acc);
   --color-title: var(--color-text-strong);
   --color-body: var(--color-text-weak);
   --color-border: var(--color-stroke-weak);
@@ -32,7 +34,7 @@
   --radius-die: 10px;
   --radius-button: 6px;
 
-  --font-main: "Nata Sans", sans-serif;
+  --font-main: "Noto Sans", sans-serif;
   --font-size-title: var(--step-3);
   --font-size-die: var(--step-1);
   --font-size-body: var(--step-0);
@@ -48,4 +50,18 @@
   --space-l: 2rem;
   --space-xl: 3rem;
   --space-xxl: 5rem;
+}
+
+html[data-theme="dark"] {
+  --color-brand: hsl(230, 95%, 79%); /* interactive  */
+  --color-text-strong: hsl(230, 0%, 100%); /* headings     */
+  --color-text-weak: hsl(230, 12%, 83%); /* body copy    */
+  --color-stroke-strong: hsl(230, 8%, 23%); /* borders      */
+  --color-stroke-weak: hsl(230, 8%, 18%); /* subtle lines */
+  --color-overlay: hsl(230, 10%, 13%); /* card surface */
+  --color-fill: hsl(230, 11%, 14%); /* card surface */
+  --color-background: hsl(230, 18%, 9%); /* page bg      */
+
+  --color-die-shadow: hsl(230 18% 35% / 0.25);
+  --color-acc: hsl(172, 65%, 35%);
 }
