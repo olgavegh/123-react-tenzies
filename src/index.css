@@ -92,6 +92,16 @@ button {
   font-weight: bold;
 }
 
+.rolling {
+  animation: spinning 0.45s ease-out both;
+}
+
+/* @media (prefers-reduced-motion: reduce) {
+  .rolling {
+    animation: none;
+  }
+} */
+
 /* --- Roll button --- */
 button.roll-dice {
   white-space: nowrap;
@@ -136,4 +146,14 @@ button.roll-dice {
   font-size: var(--font-size-body);
   display: grid;
   place-items: center;
+}
+
+@keyframes spinning {
+  50% {
+    transform: rotate(180deg) scale(0.8);
+  }
+
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
 }

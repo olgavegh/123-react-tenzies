@@ -18,8 +18,9 @@ function getInitialTheme() {
 
 export default function App() {
   const [dice, setDice] = useState(generateAllNewDice)  // lazy, call it once
-  const [rollCount, setRollCount] = useState(0)
   const [theme, setTheme] = useState(getInitialTheme) // lazy, call it once
+  const [rollCount, setRollCount] = useState(0)
+  const [isRolling, setIsRolling] = useState(false)
   const buttonRef = useRef(null)
 
   // Feature : Theme management
@@ -51,6 +52,11 @@ export default function App() {
   }
 
   function rollDice() {
+    setIsRolling(true)
+    setTimeout(() => {
+      setIsRolling(false)
+    }, 700)
+
     if (!gameWon) {
       setRollCount(prev => prev + 1)
       setDice(oldDice => oldDice.map(die =>
@@ -58,6 +64,7 @@ export default function App() {
           die :
           { ...die, value: Math.ceil(Math.random() * 6) }
       ))
+
     } else {
       setRollCount(0)
       setDice(generateAllNewDice())
@@ -72,11 +79,13 @@ export default function App() {
     ))
   }
 
-  const diceElements = dice.map(dieObj => (
+  const diceElements = dice.map((dieObj, index) => (
     <Die
       key={dieObj.id}
       value={dieObj.value}
       isHeld={dieObj.isHeld}
+      isRolling={isRolling}
+      index={index}
       hold={() => hold(dieObj.id)}
     />
   ))

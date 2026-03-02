@@ -60,7 +60,7 @@ npm run dev
 
 ### UI / UX
 
-- [ ] **Dice roll animation** — brief shake on unfreeze-and-roll
+- [x] **Dice roll animation** — brief shake on unfreeze-and-roll
 - [ ] **Held indicator** — checkmark or ring on frozen dice beyond the bg color change
 - [x] **Dark mode toggle** — design tokens already support theming
 - [ ] **Win screen** — score summary overlay before resetting
